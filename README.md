@@ -1,5 +1,4 @@
 # wpa_cli_php
-=============
 PHP based wpa_cli interface for the WPA Supplicant
 
 ## Usage
@@ -24,14 +23,25 @@ license: http://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
 ## Commands
 
 **bool ifup( void )** - executes the ifup to the specified network interface
+
 **bool ifdown( void )** - executes the ifdown to the specified network interface
+
 **string wpa_shell( string $command )** - executes commands straight to the wpa_cli binary
+
 **array status( void )** - returns an array containing status information for the interface
+
 **bool scan( void )** - requests a scan to the specified network interface
+
 **array scan_results( void )** - returns an array containing the last scan results
+
 **array list_networks( void )** - returns an array containing all known networks
+
 **num add_network( void )** - adds a network and returns its id
+
 **bool set_network( num $id, string $variable, string $value )** - sets parameters to a specified network
+
 **bool select_network( num $id )** - selects a specified network and disables the others
+
 **bool save_config( void )** - saves the configuration file
+
 **bool forget_network( string $id )** - removes a network from the known networks, saves and reloads the config
