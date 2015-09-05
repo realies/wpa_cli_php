@@ -12,7 +12,8 @@ PHP based wpa_cli interface for the WPA Supplicant
 Originally developed for use with the Raspberry Pi, but implementation should be possbile for other type of systems.
 The user running the webserver should have access to the wpa_cli, ifup and ifdown binaries in order for them to be executed.
 On a Debian system, this is easy with the visudo command that edits the priviliges file for the user accounds.
-Adding the following line to the file would enable the access to the www-data user.
+Adding the following line to the file would enable the access to the www-data user:
+
 `www-data ALL=(ALL) NOPASSWD:/sbin/wpa_cli,/sbin/ifup,/sbin/ifdown`
 
 **demo.php** contains example usage of displaying the status of the network interface and performs a scan, followed with the results
