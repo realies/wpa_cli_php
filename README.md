@@ -1,11 +1,11 @@
 # wpa_cli_php
-PHP based wpa_cli interface for the WPA Supplicant
+PHP based wpa_cli interface for WPA Supplicant
 
 ## Usage
 
-- create an instance of the wpa_cli php class in an compatible environment
-- use some of the following that are implimented through the wpa_cli binary from the WPA Supplicant package
-
+- configure the interface for use in the $iface variable
+- create an instance of the wpa_cli php class in a compatible environment
+- use some of the provided commands or execute commands to wpa_cli via the wpa_shell function
 
 ## Notes
 
